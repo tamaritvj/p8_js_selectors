@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p8_js_selectors</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+       
+
+           $(document).ready(function(){
+                //$(".btn2").hide();
+                //$("#btn1").hide();
+                //$("p").hide();
+
+            // $(".btn2").click(function(){
+            //     $(this).hide();
+            // });
+
+            /*FUNCIONA*/
+            $("#estrelles").hide();
+            $("#vareta").click(function(){
+                $("#estrelles").show();
+            });
+
+            $("#estrelles").click(function(){
+                $("#vareta").hide();
+
+            });
+            
+
+        });   
+
+    </script>
+    <style type="text/css">
+     #vareta{
+         position: absolute;
+     }
+     #estrelles{
+         position: absolute;
+         z-index: 0;
+            
+        }
+    </style>
+</head>
+<body>
+    <img id="vareta" src="img/vareta.png" alt="vareta">
+    <img id="estrelles" src="img/estrelles.png" alt="estrelles">
+    <!-- <img id="paloma" src="img/paloma.png" alt="paloma"> -->
+
+    <!-- <button id="btn1" type="button">hola</button>
+    <button class="btn2" type="button">adèu</button>
+    <img src="img/dadaism_01.jpg" alt="dadaismo">
+    <p>Lorem ipsum bla bla bla bla bla</p> -->
+
+</body>
+</html>
